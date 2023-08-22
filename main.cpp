@@ -1,8 +1,8 @@
 //#include<iostream>
 #define PY_SSIZE_T_CLEAN
 
-#include </usr/include/python3.10/Python.h>
-//#include <Python.h>
+//#include </usr/include/python3.10/Python.h>
+#include <Python.h>
 #include<iostream>
 
 int main(int argc, char** argv){
