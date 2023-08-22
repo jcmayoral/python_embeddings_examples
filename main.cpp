@@ -22,6 +22,9 @@ int main(int argc, char** argv){
         "print(sqrt(20))\n" 
     );
 
+    PyRun_SimpleString("exec(open('func.py').read())");
+
+
     if (Py_FinalizeEx() < 0){
         exit(120);
     }
