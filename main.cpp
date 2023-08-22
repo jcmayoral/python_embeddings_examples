@@ -16,7 +16,11 @@ int main(int argc, char** argv){
 
     Py_SetProgramName(program);
     Py_Initialize();
-    PyRun_SimpleString("print('hello world python')");
+    PyRun_SimpleString(
+        "print('hello world python');" 
+        "from math import sqrt\n" 
+        "print(sqrt(20))\n" 
+    );
 
     if (Py_FinalizeEx() < 0){
         exit(120);
